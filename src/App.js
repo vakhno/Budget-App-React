@@ -5,15 +5,19 @@ import Balance from './components/Balance'
 import AddTransaction from './components/AddTransaction'
 import IncomeList from './components/IncomeList'
 import ExpenseList from './components/ExpenseList'
+import { GlobalContextProvider, GLobalContextProvider } from './context/GlobalState'
+
 function App() {
 	return (
 		<div className="container">
 			<div className="app-wrapper">
-				<Header />
-				<Balance />
-				<AddTransaction />
-				<IncomeList />
-				<ExpenseList />
+				<GlobalContextProvider>
+					<Header />
+					<Balance />
+					<AddTransaction />
+					<IncomeList />
+					<ExpenseList />
+				</GlobalContextProvider>
 			</div>
 		</div>
 	)
