@@ -20,7 +20,7 @@ const AddTransaction = () => {
 	const onSubmitIncome = e => {
 		e.preventDefault()
 
-		if (incomeText !== '') {
+		if (income.incomeText !== '') {
 
 			const newIncomeTransaction = {
 				if: uuidv4(),
@@ -44,7 +44,7 @@ const AddTransaction = () => {
 	const onSubmitExpense = e => {
 		e.preventDefault()
 
-		if (expenseText !== '') {
+		if (expense.expenseText !== '') {
 
 			const newExpenseTransaction = {
 				if: uuidv4(),
