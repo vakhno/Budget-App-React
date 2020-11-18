@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Budget-App-React/static/css/main.8d704a19.chunk.css",
+    "main.js": "/Budget-App-React/static/js/main.06e746ba.chunk.js",
+    "main.js.map": "/Budget-App-React/static/js/main.06e746ba.chunk.js.map",
+    "runtime-main.js": "/Budget-App-React/static/js/runtime-main.7d0e16bb.js",
+    "runtime-main.js.map": "/Budget-App-React/static/js/runtime-main.7d0e16bb.js.map",
+    "static/js/2.528b16d8.chunk.js": "/Budget-App-React/static/js/2.528b16d8.chunk.js",
+    "static/js/2.528b16d8.chunk.js.map": "/Budget-App-React/static/js/2.528b16d8.chunk.js.map",
+    "index.html": "/Budget-App-React/index.html",
+    "static/css/main.8d704a19.chunk.css.map": "/Budget-App-React/static/css/main.8d704a19.chunk.css.map",
+    "static/js/2.528b16d8.chunk.js.LICENSE.txt": "/Budget-App-React/static/js/2.528b16d8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7d0e16bb.js",
+    "static/js/2.528b16d8.chunk.js",
+    "static/css/main.8d704a19.chunk.css",
+    "static/js/main.06e746ba.chunk.js"
+  ]
+}
