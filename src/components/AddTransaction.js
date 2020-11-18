@@ -20,18 +20,21 @@ const AddTransaction = () => {
 	const onSubmitIncome = e => {
 		e.preventDefault()
 
-		const newIncomeTransaction = {
-			if: uuidv4(),
-			incomeText: income.incomeText,
-			incomeAmount: +income.incomeAmount
+		if (incomeText !== '') {
+
+			const newIncomeTransaction = {
+				if: uuidv4(),
+				incomeText: income.incomeText,
+				incomeAmount: +income.incomeAmount
+			}
+
+			addIncome(newIncomeTransaction)
+
+			setIncome({
+				incomeText: '',
+				incomeAmount: 0,
+			})
 		}
-
-		addIncome(newIncomeTransaction)
-
-		setIncome({
-			incomeText: '',
-			incomeAmount: 0,
-		})
 	}
 
 	const onChangeExpense = e => {
@@ -41,19 +44,22 @@ const AddTransaction = () => {
 	const onSubmitExpense = e => {
 		e.preventDefault()
 
-		const newExpenseTransaction = {
-			if: uuidv4(),
-			expenseText: expense.expenseText,
-			expenseAmount: +expense.expenseAmount
+		if (expenseText !== '') {
+
+			const newExpenseTransaction = {
+				if: uuidv4(),
+				expenseText: expense.expenseText,
+				expenseAmount: +expense.expenseAmount
+			}
+
+			addExpense(newExpenseTransaction)
+
+
+			setExpense({
+				expenseText: '',
+				expenseAmount: 0,
+			})
 		}
-
-		addExpense(newExpenseTransaction)
-
-
-		setExpense({
-			expenseText: '',
-			expenseAmount: 0,
-		})
 	}
 
 	return (
